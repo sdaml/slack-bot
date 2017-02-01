@@ -1,0 +1,230 @@
+@import 'variables';
+@import 'mixins';
+
+$max-width: 48rem;
+
+.markdown-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    a,
+    ul,
+    li {
+        line-height: 1.6;
+
+        text-align: left;
+    }
+
+    ul {
+        font-size: 1.212rem;
+    }
+
+    // li {
+    //     margin-bottom: 0.25rem;
+    // }
+
+    pre.hljs {
+        overflow: scroll;
+
+        max-width: $max-width;
+        max-height: 50vh;
+        padding: 1rem;
+
+        text-align: left;
+
+        background: #2d2d2d;
+    }
+
+    div {
+        font-size: 1.212rem;
+        text-align: left;
+    }
+
+    a,
+    a:visited {
+        color: $accent;
+        @include smart-underline();
+
+        -webkit-transition: .15s ease-in;
+        transition: .15s ease-in;
+
+        opacity: 1;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        color: $accent;
+        opacity: 0.6;
+    }
+
+    @media print {
+        *,
+        *:before,
+        *:after {
+            color: #000000 !important;
+            background: transparent !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        a[href]:after {
+            content: ' (' attr(href) ')';
+        }
+
+        abbr[title]:after {
+            content: ' (' attr(title) ')';
+        }
+
+        a[href^='#']:after,
+        a[href^='javascript:']:after {
+            content: '';
+        }
+
+        pre,
+        blockquote {
+            border: 1px solid #999999;
+
+            page-break-inside: avoid;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+
+        img {
+            max-width: 100% !important;
+        }
+
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
+    body {
+        line-height: 1.85;
+    }
+    p,
+    .splendor-p {
+        margin-bottom: 1.3rem;
+    }
+    h1,
+    .splendor-h1,
+    h2,
+    .splendor-h2,
+    h3,
+    .splendor-h3,
+    h4,
+    .splendor-h4 {
+        font-weight: inherit;
+        line-height: 1.42;
+
+        margin: 1.414rem 0 .5rem;
+    }
+    h1,
+    .splendor-h1 {
+        font-size: 3.998rem;
+
+        margin-top: 0;
+    }
+    h2,
+    .splendor-h2 {
+        font-size: 2.827rem;
+    }
+    h3,
+    .splendor-h3 {
+        font-size: 1.999rem;
+    }
+    h4,
+    .splendor-h4 {
+        font-size: 1.414rem;
+    }
+    h5,
+    .splendor-h5 {
+        font-size: 1.121rem;
+    }
+    h6,
+    .splendor-h6 {
+        font-size: .88rem;
+    }
+    small,
+    .splendor-small {
+        font-size: .707em;
+    }
+    /* https://github.com/mrmrs/fluidity */
+    img,
+    canvas,
+    iframe,
+    video,
+    svg,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+    html {
+        max-width: 100%;
+    }
+    /* === A bit of a gross hack so we can have bleeding divs/blockquotes. */
+    p,
+    *:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
+        max-width: $max-width;
+        margin: 1rem auto 1rem;
+        padding: .25rem;
+    }
+    div {
+        width: 100%;
+    }
+    div img {
+        width: 100%;
+    }
+    blockquote p {
+        font-size: 1.5rem;
+        font-style: italic;
+
+        max-width: 48rem;
+        margin: 1rem auto 1rem;
+    }
+    li {
+        margin-left: 2rem;
+    }
+    /* Counteract the specificity of the gross *:not() chain. */
+    h1 {
+        padding: 4rem 0;
+    }
+    /*  === End gross hack */
+    p {
+        line-height: 1.45;
+
+        height: auto;
+
+        color: #555555;
+    }
+    pre,
+    code {
+        font-family: 'Fira Mono', Menlo, Monaco, 'Courier New', monospace;
+    }
+    pre {
+        font-size: .8rem;
+
+        overflow-x: scroll;
+
+        padding: 1.125em;
+
+        background-color: #fafafa;
+    }
+}

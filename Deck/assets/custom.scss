@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'mixins';
+
+html,
+body,
+p {
+    font-size: 18px;
+}
+
+.title {
+    .markdown-body {
+        h1,
+        h2,
+        h3 {
+            padding: 0;
+
+            text-align: center;
+        }
+    }
+}
+
+.markdown-body {
+    pre,
+    code {
+        border-radius: 2px;
+    }
+    pre {
+        background: #2d2d2d;
+    }
+    code {
+        background: #ffffff;
+    }
+}
+
+.left {
+    float: left;
+
+    width: 49% !important;
+    margin: 0 .5%;
+}
+
+// Text Selection Colour
+::selection {
+    background: $selection; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: $selection; /* Gecko Browsers */
+}
