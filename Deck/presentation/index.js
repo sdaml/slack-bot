@@ -3,26 +3,10 @@ import React from 'react';
 
 // Import Spectacle Core tags
 import {
-  Appear,
-  BlockQuote,
-  Cite,
-  CodePane,
   Deck,
-  Fill,
-  Heading,
-  Image,
-  Layout,
-  Link,
-  ListItem,
-  List,
-  Quote,
   Slide,
-  Spectacle,
-  Text
+  Spectacle
 } from 'spectacle';
-
-// Import image preloader util
-import preloader from 'spectacle/lib/utils/preloader';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -40,22 +24,12 @@ import markdown from './markdown';
 require('normalize.css');
 require('spectacle/lib/themes/default/index.css');
 
-const images = {
-    city: require('../assets/city.jpg'),
-    kat: require('../assets/kat.png'),
-    logo: require('../assets/formidable-logo.svg'),
-    markdown: require('../assets/markdown.png')
-};
-
-preloader(images);
-
 const theme = createTheme({
-    primary: '#F4F4F4',
-    secondary: '#333333',
-    quartenary: '#333333'
+    primary: 'white',
+    secondary: '#4A4A4A',
+    quartenary: '#06D6A0'
 }, {
-    primary: 'Merriweather',
-    secondary: { name: 'Fira Mono', googleFont: true, styles: ['400', '700'] }
+    primary: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
 });
 
 class Presentation extends React.Component {
@@ -65,8 +39,7 @@ class Presentation extends React.Component {
                 <Deck
                     transition={['slide']}
                     transitionDuration={500}
-                    bgColor='background'
-                    progress='bar'>
+                    bgColor='background'>
 
                     {Object.keys(markdown).map((key) => {
                         const body = markdown[key];

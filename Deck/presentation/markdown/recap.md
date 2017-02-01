@@ -5,7 +5,7 @@
 - Had some food 🍝
 
 All of last year's meeting notes are on our github 
-   - https://www.github.com/SDAML
+   - [SD&ML Github](https://www.github.com/SDAML)
    
 
  

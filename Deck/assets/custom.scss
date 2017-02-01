@@ -9,6 +9,11 @@ p {
 
 .title {
     .markdown-body {
+        h1 {
+            color: $secondary;
+            font-size: 10rem;
+        }
+
         h1,
         h2,
         h3 {
@@ -20,6 +25,10 @@ p {
 }
 
 .markdown-body {
+    h1 {
+        font-weight: bold;
+    }
+
     pre,
     code {
         border-radius: 2px;
