@@ -3,22 +3,27 @@
 
 body {
     background: $background;
+    /* Better Font Rendering =========== */
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html,
 body,
 p {
     font-size: 18px;
+
     color: $primary;
 }
 
 .title {
     .markdown-body {
         h1 {
-            color: $secondary;
             font-size: 10rem;
-        }
 
+            color: $secondary;
+        }
         h1,
         h2,
         h3 {
@@ -33,7 +38,6 @@ p {
     h1 {
         font-weight: bold;
     }
-
     pre,
     code {
         border-radius: 2px;
