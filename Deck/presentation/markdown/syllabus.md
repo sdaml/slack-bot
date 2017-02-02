@@ -1,4 +1,4 @@
-# This Year's Plans
+# This Semester's Plans
 
 - 🤖 Slack Bot
 - 🎤 NLP Basics
