@@ -1,1 +1,1 @@
-## [sdaml/Introduction](https://github.com/sdaml/Introduction)
+## [sdaml/introduction](https://github.com/sdaml/introduction)

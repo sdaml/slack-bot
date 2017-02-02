@@ -7,5 +7,5 @@
 
 All of last year's meeting notes are on our github 
    
-- [SD&ML Github](https://github.com/sdaml/weekly_notes)
+- [sdaml Github](https://github.com/sdaml/weekly_notes)
   
