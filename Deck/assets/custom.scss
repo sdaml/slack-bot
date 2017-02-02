@@ -1,10 +1,15 @@
 @import 'variables';
 @import 'mixins';
 
+body {
+    background: $background;
+}
+
 html,
 body,
 p {
     font-size: 18px;
+    color: $primary;
 }
 
 .title {

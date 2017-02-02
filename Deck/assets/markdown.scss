@@ -45,7 +45,7 @@ $max-width: 48rem;
 
     a,
     a:visited {
-        color: $accent;
+        color: $primary;
         @include smart-underline();
 
         -webkit-transition: .15s ease-in;
@@ -57,7 +57,6 @@ $max-width: 48rem;
     a:hover,
     a:focus,
     a:active {
-        color: $accent;
         opacity: 0.6;
     }
 
