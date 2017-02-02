@@ -2,7 +2,7 @@
 
 Jake will be leading us into the wonderful world of `Slack Bots`
 
-We'll get an intro to ES6, Node, and the Slack API
+We'll get an intro to ES6, Node, and the Slack APIs.
 
 ### When and Where
 - 6:30-8PM

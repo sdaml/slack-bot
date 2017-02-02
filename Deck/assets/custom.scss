@@ -34,6 +34,14 @@ p {
     }
 }
 
+.contact {
+    .markdown-body {
+        ul {
+            margin-top: 0;
+        }
+    }
+}
+
 .markdown-body {
     h1 {
         font-weight: bold;
