@@ -6,6 +6,7 @@ import syllabus from './syllabus.md';
 import environment from './environment.md';
 import nextweek from './nextweek.md';
 import contact from './contact.md';
+import thisWeekGithub from './this-week-github.md';
 
 const markdown = {
     title,
@@ -14,7 +15,8 @@ const markdown = {
     syllabus,
     environment,
     nextweek,
-    contact
+    contact,
+    thisWeekGithub
 };
 
 export default markdown;
