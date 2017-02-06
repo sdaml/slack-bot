@@ -1,4 +1,4 @@
-# Slack bot
+# Slack Bot 🤖
 
 Here lies the deck and notes of meeting on February 8th, 2017.
 
