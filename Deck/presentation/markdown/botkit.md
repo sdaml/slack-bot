@@ -9,6 +9,11 @@ const controller = Botkit.slackbot({
     debug: false
 });
 
+controller.setupWebserver(port, (err) => {
+    if (err) console.log(err);
+    console.log(`Magic happens on port ${port}`);
+});
+
 controller.spawn({
     token: process.env.SLACK_TOKEN
 }).startRTM();
