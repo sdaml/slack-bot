@@ -1,3 +1,1 @@
-# sd&ml
-
-### Software Development & Machine Learning
+# Slack Bot 🤖

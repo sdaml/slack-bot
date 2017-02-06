@@ -1,6 +1,6 @@
-# sd&ml intro
+# Slack bot
 
-Here lies the deck and notes of the first sd&ml meeting of 2017.
+Here lies the deck and notes of meeting on February 8th, 2017.
 
 - [Slides are here](http://introduction.sdaml.club)
 - [Notes are here](https://github.com/sdaml/Introduction/tree/master/Notes)
