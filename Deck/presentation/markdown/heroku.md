@@ -9,6 +9,6 @@ Download the [cli](https://devcenter.heroku.com/articles/heroku-cli) and create 
 
 ```sh
 heroku login
-heroku git:clone -a sdaml-bot-testing
+heroku git:clone -a sdaml-bot
 git push heroku master
 ```
