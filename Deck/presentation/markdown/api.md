@@ -8,5 +8,5 @@
 - Add the token to a `.env` file
 
 ```sh
-echo "SLACK_TOKEN=[PASTE TOKEN HERE]" > .env
+echo "SLACK_API_TOKEN=[PASTE TOKEN HERE]" > .env
 ```
