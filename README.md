@@ -1,8 +1,8 @@
 # Slack Bot 🤖
 
-Here lies the deck and notes of meeting on February 8th, 2017.
+Here lies the deck and notes of meeting on February 22nd, 2017.
 
-- [Slides are here]()
+- [Slides are here](http://bot.sdaml.club)
 - [Notes are here](https://github.com/sdaml/slack-bot/tree/master/Notes)
 
 ## Deck Dev 👨‍🏫
