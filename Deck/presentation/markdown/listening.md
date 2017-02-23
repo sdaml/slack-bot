@@ -12,7 +12,7 @@ You can listen for messages of type:
 ```javascript
 controller.hears('hello',  ['direct_message', 'direct_mention'], 
     (bot, message) => {
-        bot.reply(message, 'Hey there 👋`');
+        bot.reply(message, 'Hey there 👋');
     }
 );
 ```

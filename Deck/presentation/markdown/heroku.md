@@ -2,10 +2,10 @@
 
 [Heroku](https://heroku.com) is an awesome server hosting platform. The free tier is great for small apps (_like this one_).
 
-Download the [cli](https://devcenter.heroku.com/articles/heroku-cli) and create an app on heroku. Then,
+Download the [cli](https://devcenter.heroku.com/articles/heroku-cli) and create an app new app. Then,
 
-- link with your project
-- add the `SLACK_TOKEN` environment variable
+- Link with your project
+- Add the `SLACK_TOKEN` environment variable
 
 ```sh
 heroku login
